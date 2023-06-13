@@ -24,9 +24,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'	// MSSQL
+//	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'	// MSSQL
 //	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'	// MariaDB
-//	runtimeOnly 'com.mysql:mysql-connector-j'			// MySQL
+	runtimeOnly 'com.mysql:mysql-connector-j'			// MySQL
 //	runtimeOnly 'com.h2database:h2'						// H2 DB 접속
 
 	compileOnly 'org.projectlombok:lombok'

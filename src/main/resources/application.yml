@@ -1,0 +1,16 @@
+
+jpa:
+  hibernate:
+    ddl-auto: none # create update none
+  show-sql: true
+  properties:
+    hibernate:
+      format_sql: true # sql 예쁘게 출력
+      default_batch_fetch_size: 500 # 1:n 컬렉션 조회 시 성능 최적화
+      dialect : org.hibernate.dialect.MySQLDialect
+  open-in-view: false   # 연속성  컨텍스트의 생존 범위를 트랜잭션 범위로 한정
+
+logging:
+  level:
+    org.hibernate.type: trace # 콘솔창에 조건에 바인딩되는 값 및 조회결과 출력
+    myspring: debug  # todo 패키지 수정

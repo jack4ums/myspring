@@ -29,6 +29,8 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-j'			// MySQL
 //	runtimeOnly 'com.h2database:h2'						// H2 DB 접속
 
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'		/* Data 쿼리문 파라메타 포함 출력  */
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
